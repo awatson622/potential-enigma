@@ -9,7 +9,7 @@ The project creates a README file and outline.
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Video](#video)
 - [Questions](#questions)
 
 ## Installation
@@ -25,6 +25,9 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Contributing
 Contributions are welcome! Feel free to provide helpful tips or submit bug reports on [GitHub](https://github.com/awatson622/README-generator).
+
+## Video link
+https://drive.google.com/file/d/15Cok4Y1furqY3IVQS42smzYUZxFXHgO2/view 
 
 ## Questions
 If you have any questions, please feel free to contact me:
