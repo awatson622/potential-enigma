@@ -19,17 +19,23 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log('README.md successfully generated!')
-  );
+  console.log('README.md successfully generated!');
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions)
     .then((data) => {
+      console.log('Data received:', data); // Add logging statement
       const markdown = generateMarkdown(data);
-      writeToFile('README.md', markdown);
+      console.log('Generated markdown:', markdown); // Add logging statement
+
+      if (markdown) {
+        fs.writeFileSync('README.md', markdown);
+        console.log('README.md successfully generated!');
+      } else {
+        console.error('Error: Generated markdown is undefined.');
+      }
     })
     .catch((error) => {
       console.error('An error occurred:', error);
@@ -38,3 +44,4 @@ function init() {
 
 // Function call to initialize app
 init();
+
